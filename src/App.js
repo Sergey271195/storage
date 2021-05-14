@@ -1,9 +1,12 @@
 import './App.css';
+import Controller from './components/Controller';
+import RegisterContextProvider from './context/RegisterContext';
 
 function App() {
   return (
-    <div>
-    </div>
+    <RegisterContextProvider>
+      <Controller />
+    </RegisterContextProvider>
   );
 }
 

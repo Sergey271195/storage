@@ -9,7 +9,10 @@ const initialState = {
     description: '',
     photo: '',
     skills: '',
-    phone: ''
+    phone: '',
+    password: '',
+    confPassword: '',
+    page: 1,
 }
 
 export const RegisterContext = createContext();
@@ -19,7 +22,7 @@ const RegisterContextProvider = ({children}) => {
     const [state, dispatch] = useReducer(RegisterReducer, initialState)
 
     return (
-        <RegisterContext.Provider>
+        <RegisterContext.Provider value = {{state, dispatch}}>
             {children}
         </RegisterContext.Provider>
     )

@@ -10,29 +10,49 @@ export const RegisterReducer = (state, action) => {
                 ...state, phone: action.phone
             }
         }
-        case "PHONE": {
+        case "FIRST_NAME": {
             return {
-                ...state, phone: action.phone
+                ...state, firstName: action.firstName
             }
         }
-        case "PHONE": {
+        case "LAST_NAME": {
             return {
-                ...state, phone: action.phone
+                ...state, lastName: action.lastName
             }
         }
-        case "PHONE": {
+        case "BIRTH_DATE": {
             return {
-                ...state, phone: action.phone
+                ...state, birthDate: action.birthDate
             }
         }
-        case "PHONE": {
+        case "PASSWORD": {
             return {
-                ...state, phone: action.phone
+                ...state, password: action.password
             }
         }
-        case "PHONE": {
+        case "CONFIRM_PASSWORD": {
             return {
-                ...state, phone: action.phone
+                ...state, confPassword: action.confPassword
+            }
+        }
+        case "PHOTO": {
+            return {
+                ...state, photo: action.photo
+            }
+        }
+        case "DESCRIPTION": {
+            return {
+                ...state, description: action.description
+            }
+        }
+        case "SKILLS": {
+            return {
+                ...state, skills: action.skills
+            }
+        }
+        case "PAGE": {
+            return {
+                ...state, page: action.page
             }
         }
         default: {
